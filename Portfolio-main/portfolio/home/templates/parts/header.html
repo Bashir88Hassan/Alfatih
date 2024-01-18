@@ -1,0 +1,47 @@
+    {% load static %}
+    <!-- home -->
+    <section class="home" id="home">
+        <nav>
+            <h2>Alfatih <span>Sirag</span></h2>
+            <ul id="actions">
+                <li><a href="#">Home</a></li>
+                <li><a href="#servicesSection">Services</a></li>
+                <li><a href="#skillsSection">Skills</a></li>
+                <li><a href="#aboutSection">About Me</a></li>
+                <li><a href="#contactsSection">Contact Me</a></li>
+            </ul>
+            <a href="#" hidden class="btn">Subscribe</a>
+            <button id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="content">
+            <div class="container-texts">
+                <div class = 'texts'>
+                    <h4>Hey, It's me</h4>
+                    <h1><span>Alpha!</span></h1>
+                    <h3>A <span>Full-stack</span> developer & <span>Network</span> Engineer</h3>
+                </div>
+                <a href="{% static './documents/Alfatih Sirag Latest.pdf' %}" download class="btn">Download CV</a>
+                <div class="social" id="contactsSection">
+                    <a href="https://www.facebook.com/Alpha.Ti7" targe="_blank"><img src="{% static 'icons/facebook.png' %}"
+                            alt="facebook"></a>
+                    <a href="https://www.instagram.com/alpha_ti7/" target="_blank" target="_blank"><img
+                            src="{% static 'icons/instagram.png' %}" alt="facebook"></a>
+                    <a href="https://twitter.com/Alfatih_Sirag_A" target="_blank"><img src="{% static 'icons/twitter.png' %}"
+                            alt="twitter"></a>
+                    <a href="https://t.me/Alpha_Ti7" target="_blank"><img src="{% static 'icons/telegram.png' %}" alt="facebook"></a>
+                    <a href="https://www.linkedin.com/in/alfatih-khair-alseed-684468211/" target="_blank"><img
+                            src="{% static 'icons/linkedin.png' %}" alt="linkedin"></a>
+                    <a href="https://github.com/Alphatih" style="margin-top:20px" target="_blank;"><img
+                            src="{% static 'icons/github.png' %}" alt="github"></a>
+                </div>
+            </div>
+            <div class="container-images">
+                <img src="{% static './Imgs/shape.png' %}" width="250px" alt="" class="shape" />
+                <img src="{% static './Imgs/Alfatih.png' %}" width="250px" alt="" class="myPic">
+            </div>
+        </div>
+    </section>

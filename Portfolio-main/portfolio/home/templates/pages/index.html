@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- about -->
+    <section class="about" id="aboutSection">
+        <div class="container-images">
+            <img src="{% static './Imgs/me.png' %}" />
+        </div>
+        <div class="container-texts">
+            <h1>About Me</h1>
+            <h5><span>Full</span>-Stack Dev & <span>Network</span> Engineer</h5>
+            <p>I am a junior full-stack web developer and a senior network engineer. I have solid concept and experience
+                in networking engineering and working experience with multi-vendor companies such as Cisco, huawei,
+                Juniper, Yeaster and Fortinet and deployed, operated and maintained their devices in real life projects.
+            </p>
+            <hr />
+
+            <p>A full stack web developer who's mastered both HTML & CSS, intermdiate in JS taking it to mastery road,
+                good understanding of PHP & MySql, has built several projects with them and a decent understanding for
+                databases.</p>
+            <hr />
+            <p>And yet I'm a semi-finalist the 4th Year of my B.s.c in Computer Science certificate at the university of
+                IOU.</p>
+
+        </div>
+    </section>
+    <!-- services -->
+    <section class="services" id="servicesSection">
+        <h1 class=" text-center"><span>Our</span> Services</h1>
+        <div class="box">
+            {% for servie in servies %}
+            <div class="card">
+                <em class="{{servie.icon}}"></em>
+                <h5>{{servie.name}}</h5>
+                <div class="par">
+                    <p>{{servie.content}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    <!-- skills -->
+    <section class="skills" id="skillsSection">
+        <div class="container-skills">
+            <h1><span>My</span> Skills</h1>
+            <div class="content-skills">
+                {% for skill in skills %}
+                <div class="skill"><img src="{{skill.img.url}}" alt="" /></div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="container-images">
+            <img src="{% static 'Imgs/programming.png' %}" />
+        </div>
+    </section>
+{% endblock %}
